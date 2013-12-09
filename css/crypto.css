@@ -8,7 +8,7 @@ body{
 }
 
 #chrome-chrome{
-  background-image: url(images/chrome.png);
+  background-image: url(../images/chrome.png);
   background-repeat: no-repeat;
   height: 1000px;
   position:absolute;
