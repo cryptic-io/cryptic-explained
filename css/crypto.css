@@ -1,0 +1,82 @@
+body{
+  height:3000px;
+}
+
+#browser-crypto{
+  width: 1255px;
+  margin: auto;
+}
+
+#chrome-chrome{
+  background-image: url(/images/chrome.png);
+  background-repeat: no-repeat;
+  height: 1000px;
+  position:absolute;
+  width: 1255px;
+  top:0px;
+}
+
+.picture-container{
+  text-align:center;
+  position: relative;
+  margin:auto;
+  margin-top:300px;
+}
+
+.picture-part{
+  height: 75px;
+  width: 400px;
+  overflow:hidden;
+  margin:auto;
+}
+
+.anim{
+}
+
+.sloth-picture{
+  width: 400px;
+  height: 300px;
+  position: relative;
+}
+
+.random-data{
+  height:75px;
+  width:0px;
+  background-color: black;
+  background-image: url(http://cdn.scratch.mit.edu/static/site/projects/thumbnails/67/9827.png);
+  position: absolute;
+  z-index:2;
+}
+
+.part1 img{
+}
+.part2 img{
+  top:-75px;
+}
+.part3 img{
+  top:-150px;
+}
+.part4 img{
+  top:-225px;
+}
+
+.crypto-container{
+  position:absolute;
+  top: -25px;
+  left: 0px;
+  z-index:3;
+}
+
+#crypto-box{
+  background-color: whitesmoke;
+  height: 450px;
+  width: 50px;
+  opacity: 0;
+}
+
+#crypto-box p{
+  width: 100px;
+  position: relative;
+  top: 200px;
+  left: -25px;
+}
