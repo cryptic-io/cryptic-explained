@@ -1,6 +1,23 @@
 body{
-  height:3000px;
+  height:8000px;
 }
+
+
+.body {
+  height: 100%;
+}
+
+/* the prelude */
+#prelude{
+  width: 1000px;
+  margin:auto;
+  margin-top:50px;
+}
+
+#prelude .row-fluid {
+  margin-top: 20px;
+}
+
 
 #browser-crypto{
   width: 1255px;
@@ -13,14 +30,15 @@ body{
   height: 1000px;
   position:absolute;
   width: 1255px;
-  top:0px;
+  margin-top:550px;
+  top: 0px;
 }
 
 .picture-container{
   text-align:center;
   position: relative;
   margin:auto;
-  margin-top:300px;
+  margin-top:280px;
 }
 
 .picture-part{
@@ -69,17 +87,103 @@ body{
 
 #crypto-box{
   background-color: whitesmoke;
-  height: 450px;
+  height: 415px;
   width: 50px;
   opacity: 0;
 }
 
 #crypto-box p{
-  width: 100px;
+  width: 150px;
   position: relative;
   top: 200px;
-  left: -25px;
+  left: -50px;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 
+}
+
+/* Text layout */
+.left-text{
+  width: 300px;
+  position: absolute;
+  margin-left: 95px;
+}
+
+.right-text{
+  width: 300px;
+  position: absolute;
+  right: 95px;
+}
+
+.hidden-text{
+  opacity: 0;
+}
+
+.tier2{
+  margin-top:100px;
+}
+
+.tier3{
+  margin-top:200px;
+}
+
+.tier4{
+  margin-top:300px;
+}
+
+.tier5{
+  margin-top:400px;
+}
+
+.tier6{
+  margin-top:500px;
+}
+
+.tier7{
+  margin-top:600px;
+}
+
+
+/* Server part */
+
+#server-part{
+  width:420px;
+  margin:auto;
+}
+
+.server-image{
+  top: 1630px;
+  position:relative;
+  width:420px;
+  background-image: url(../images/cryptic-servers.png);
+  height: 220px;
+  z-index:4;
+}
+
+/* File part */
+#files-container{
+  margin: auto;
+  position: relative;
+  top: -420px;
+  opacity: 0;
+}
+
+.file-image{
+  margin-bottom: 35px;
+}
+
+.black-icon {
+  color:black;
+}
+
+.file-image i {
+  margin-right: 20px;
+}
+
+/* rest of about page */
+#rest-about{
+  position: relative;
+  top: 2000px;
+  width: 80%;
+  margin: auto;
 }

@@ -1,33 +1,413 @@
 <html>
+<!-- Sloth picture acquired from http://en.wikipedia.org/wiki/File:SlothDWA.jpg by Sergiodelgado -->
 <head>
+  <link rel="stylesheet" type="text/css" href="css/cryptic.css"></link>
   <link rel="stylesheet" type="text/css" href="css/crypto.css"></link>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
-  <div id="browser-crypto">
-    <div id="chrome-chrome" class="anim" data-anim="100|800|700|top"></div>
+  <div class="row" id="header">
+    <div class="row">
+      <a href="/">
+        <div class="span2" id="logo"></div>
+      </a>
+      <div class="pull-right" id="topBar"><a href="#about"><div class="topBox span carrotBtn"><p>About</p><div class="selectedBar carrotSelected" style="left: -150px;"></div></div></a><a href="#home"><div class="topBox span emeraldBtn"><p>Upload</p><div class="selectedBar emeraldSelected" style="left: -300px;"></div></div></a><a href="#register"><div class="topBox span asphaltBtn"><p>Register</p><div class="selectedBar asphaltSelected" style="left: -450px;"></div></div></a><a href="#login"><div class="topBox span peter-riverBtn"><p>Login</p><div class="selectedBar peter-riverSelected" style="left: -600px;"></div></div></a></div>
+    </div>
+  </div>
 
-    <div class="picture-container anim" data-anim="100|1800|1700|top">
-      <div data-anim="0|50|30|margin-bottom" class="picture-part part1 anim">
-        <div data-anim="410|550|400|width" class="random-data anim" style="background-position-x:10px;"></div>
-        <img class="sloth-picture" src="images/sloth.jpg"></img>
+  <div class="body">
+    <div id="prelude">
+
+      <div class="row-fluid marginLeft">
+        <div class="span12">
+          <h2> Making secure and encrypted online storage for everyone </h2>
+          <p class="marginLeft">
+            Encryption solutions exist, but you, and the people you work with,
+              don't use them. The problem is that <b>secure and good</b>
+              encryption is <b>hard</b>. 
+              Cryptic makes encryption easy, without compromising security or
+              privacy.
+          </p>
+        </div>
       </div>
-      <div data-anim="50|100|30|margin-bottom" class="picture-part part2 anim">
-        <div data-anim="410|550|400|width" class="random-data anim" style="background-position-x:-10px;"></div>
-        <img class="sloth-picture" src="images/sloth.jpg"></img>
+
+      <div class="row-fluid marginLeft"></div>
+
+      <div class="row-fluid marginLeft">
+        <div class="span6">
+          <h2> Traditional File Storages... </h2>
+          <p class="marginLeft">
+            Traditional file storages 
+            use an encrypted connection between the server and your browser, but the files are still stored as plaintext. 
+            Meaning files can be opened, analyzed, and mined without your knowledge.
+          </p>
+        </div>
+        <div class="span6">
+          <h2> A Different Approach </h2>
+          <p class="marginLeft">
+            Cryptic uses Client Side encryption to encrypt your files locally on your computer. 
+            The server receives your encrypted your encrypted data where it redundantly stores your files.
+            It's impossible for Cryptic, or anyone else, to access your files without your knowledge.
+            Cryptic makes your files accessible from anywhere, and secure from anyone.
+          </p>
+        </div>
       </div>
-      <div data-anim="100|150|30|margin-bottom" class="picture-part part3 anim">
-        <div data-anim="410|550|400|width" class="random-data anim" style="background-position-x:40px;"></div>
-        <img class="sloth-picture" src="images/sloth.jpg"></img>
+
+      <div class="row-fluid marginLeft">
+        <div class="span12">
+          <h2> How Cryptic works</h2>
+          <p class="marginLeft">
+            Cryptic works similarly to PGP. Each user has a public/private key that they use to sign messages
+            to a server and encrypt passwords to individual files. Every file is encrypted with a unique random password.
+          </p>
+        </div>
+      </div> 
+      <div class="row-fluid marginLeft">
       </div>
-      <div data-anim="150|200|30|margin-bottom" class="picture-part part4 anim">
-        <div data-anim="410|550|400|width" class="random-data anim" style="background-position-x:-40px;"></div>
-        <img class="sloth-picture" src="images/sloth.jpg"></img>
-      </div>
-      <div class="crypto-container anim" data-anim="250|1000|2000|left">
-        <div class="anim" data-anim="500|680|1|0|opacity">
-          <div id="crypto-box" class="anim" data-anim="270|300|1|opacity">
-            <p>AES-256-CTR</p>
+
+      <div class="row-fluid marginLeft">
+        <div class="offset4 span6">
+          <h1> Specifically...</h2>
+          <p class="marginLeft">
+          </p>
+        </div>
+      </div> 
+
+
+    </div>
+    <div id="browser-crypto">
+      <div id="chrome-chrome" class="anim" data-anim="750|1600|850|top"></div>
+
+      <div class="picture-container anim" data-anim="750|3300|2550|top">
+
+        <!-- First parts of the text describing chunking and encryption-->
+        <div data-anim-rel="#browser-crypto" data-anim="950|1150|1|0|opacity" class="anim">
+          <div data-anim-rel="#browser-crypto" data-anim="000|100|40|top" class="right-text anim tier1">
+            <p data-anim-rel="#browser-crypto" data-anim="00|100|1|opacity" class="anim hiddenText">
+              Your file gets split up into little chunks so that the chunks can be proccessed in parallel. 
+              It also facilitates resuming an interrupted download/upload.
+            </p>
           </div>
+        </div>
+
+        <div data-anim-rel="#browser-crypto" data-anim="950|1150|1|0|opacity" class="anim">
+          <div data-anim-rel="#browser-crypto" data-anim="200|300|40|top" class="right-text anim tier3">
+            <p data-anim-rel="#browser-crypto" data-anim="200|300|1|opacity" class="anim hiddenText">
+              Each chunk gets encrypted in parallel using CCM with a 256 bit key and AES
+            </p>
+          </div>
+        </div>
+
+        <div data-anim-rel="#browser-crypto" data-anim="950|1150|1|0|opacity" class="anim">
+          <div data-anim-rel="#browser-crypto" data-anim="250|350|40|top" class="left-text anim tier4">
+            <p data-anim-rel="#browser-crypto" data-anim="250|350|1|opacity" class="anim hiddenText">
+              Encryption is done using CCM, which encrypts and authenticates data. Cryptic uses the 
+              <a href="https://github.com/bitwiseshiftleft/sjcl"> Stanford Javascript Crypto Library</a>. 
+            </p>
+          </div>
+        </div>
+
+        <!-- Parts describing encrypted data going to cryptic servers -->
+
+        <div data-anim-rel="#browser-crypto" data-anim="2500|2950|1|0|opacity" class="anim">
+          <div data-anim-rel="#browser-crypto" data-anim="1600|1700|40|top" class="left-text anim tier1">
+            <p data-anim-rel="#browser-crypto" data-anim="1600|1700|1|opacity" class="anim hiddenText">
+              Only the encrypted chunks are sent to the server. 
+            </p>
+          </div>
+        </div>
+
+        <div data-anim-rel="#browser-crypto" data-anim="2500|2950|1|0|opacity" class="anim">
+          <div data-anim-rel="#browser-crypto" data-anim="1700|1800|40|top" class="right-text anim tier2">
+            <p data-anim-rel="#browser-crypto" data-anim="1700|1800|1|opacity" class="anim hiddenText">
+              The key to the files are encrypted with your login password. 
+              Only the encrypted version of the file keys are sent to the server.
+            </p>
+          </div>
+        </div>
+
+        <div data-anim-rel="#browser-crypto" data-anim="2500|2950|1|0|opacity" class="anim">
+          <div data-anim-rel="#browser-crypto" data-anim="1800|1900|40|top" class="left-text anim tier3">
+            <p data-anim-rel="#browser-crypto" data-anim="1800|1900|1|opacity" class="anim hiddenText">
+              Everything the server gets will always be encrypted by the client. 
+              The server has no reason to know anything except that these are binary files.
+            </p>
+          </div>
+        </div>
+
+        <div data-anim-rel="#browser-crypto" data-anim="2500|2950|1|0|opacity" class="anim">
+          <div data-anim-rel="#browser-crypto" data-anim="2250|2350|40|top" class="right-text anim tier4">
+            <p data-anim-rel="#browser-crypto" data-anim="2250|2350|1|opacity" class="anim hiddenText">
+              Each encrypted file is copied at least 3 times, and stored on 3 different servers. 
+              Your files aren't going anywhere.
+            </p>
+          </div>
+        </div>
+
+        <div data-anim="850|950|30|margin-bottom" class="picture-part part1 anim">
+          <div class="anim" data-anim-rel="#browser-crypto" data-anim="2280|2300|1|0|opacity">
+            <div data-anim="1160|1320|400|width" class="random-data anim" style="background-position-x:10px;"></div>
+            <img class="sloth-picture" src="images/sloth.jpg"></img>
+          </div>
+        </div>
+        <div data-anim="850|1000|30|margin-bottom" class="picture-part part2 anim">
+          <div class="anim" data-anim-rel="#browser-crypto" data-anim="2180|2200|1|0|opacity">
+            <div data-anim="1160|1320|400|width" class="random-data anim" style="background-position-x:-10px;"></div>
+            <img class="sloth-picture" src="images/sloth.jpg"></img>
+          </div>
+        </div>
+        <div data-anim="850|1050|30|margin-bottom" class="picture-part part3 anim">
+          <div class="anim" data-anim-rel="#browser-crypto" data-anim="2080|2100|1|0|opacity">
+            <div data-anim="1160|1320|400|width" class="random-data anim" style="background-position-x:40px;"></div>
+            <img class="sloth-picture" src="images/sloth.jpg"></img>
+          </div>
+        </div>
+        <div data-anim="850|1100|30|margin-bottom" class="picture-part part4 anim">
+          <div class="anim" data-anim-rel="#browser-crypto" data-anim="1980|2000|1|0|opacity">
+            <div data-anim="1160|1320|400|width" class="random-data anim" style="background-position-x:-40px;"></div>
+            <img class="sloth-picture" src="images/sloth.jpg"></img>
+          </div>
+        </div>
+        <div class="crypto-container anim" data-anim="1000|1800|2000|left">
+          <div class="anim" data-anim="1300|1500|1|0|opacity">
+            <div id="crypto-box" class="anim" data-anim="1000|1100|1|opacity">
+              <p>AES-256-CCM</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- file icons under the server -->
+
+        <div id="files-container" data-anim-rel="#browser-crypto" data-anim="1800|1900|1|opacity" class="anim">
+          <div class="file-image">
+            <i class="fa fa-file fa-5x black-icon"></i>
+            <i class="fa fa-file fa-5x black-icon"></i>
+            <i class="fa fa-file fa-5x black-icon"></i>
+          </div>
+          <div class="file-image">
+            <i class="fa fa-file fa-5x black-icon"></i>
+            <i class="fa fa-file fa-5x black-icon"></i>
+            <i class="fa fa-file fa-5x black-icon"></i>
+          </div>
+          <div class="file-image">
+            <i class="fa fa-file fa-5x black-icon"></i>
+            <i class="fa fa-file fa-5x black-icon"></i>
+            <i class="fa fa-file fa-5x black-icon"></i>
+          </div>
+          <div class="file-image">
+            <i class="fa fa-file fa-5x black-icon"></i>
+            <i class="fa fa-file fa-5x black-icon"></i>
+            <i class="fa fa-file fa-5x black-icon"></i>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div id="server-part" >
+      <div class="server-image" data-anim="400|3000|2400|3000|top"></div>
+    </div>
+
+  <!-- the rest of the about page... -->
+
+    <div id="rest-about">
+      <div class="row-fluid">
+        <div class="span8 offset2">
+          <div class="infoSeparator"></div>
+        </div>
+      </div>
+      <div class="marginLeft">
+        <h2>How to use</h2>
+        <div class="row-fluid marginLeft">
+          <div class="span6">
+            <h3>Anonymous Upload</h3>
+            <p class="marginLeft">Anonymity is the greatest tool for privacy. You can start
+            uploading and sharing information securely right away! (<i>sans
+              hoops</i>).
+            </p>
+            <p class="marginLeft">Likewise, anyone you <i>explicitly</i> give permission to see your
+            files can download them right away, no account needed.
+            </p>
+          </div>
+          <div class="span6"><img src="images/upload.png"></div>
+        </div>
+        <div class="row-fluid marginLeft">
+          <div class="span6"><img src="images/account.png"></div>
+          <div class="span6">
+            <h3><i>Private</i> Account</h3>
+            <p class="marginLeft">Private accounts provide all the benefits of having a managed
+            system, without compromising privacy.
+            </p>
+            <p class="marginLeft">All account information exists encrypted on our servers, and is
+            only decrypted locally on your computer. We don't even keep a hash
+            of your password. (check out <a href="/security"> security </a>
+            for more info.)
+            </p>
+          </div>
+        </div>
+        <div class="row-fluid marginLeft">
+          <div class="span6">
+            <h3>Safe and Private sharing, made easy</h3>
+            <p class="marginLeft">You <i>explicity</i> declare who sees your files and how.</p>
+            <p class="marginLeft">When sharing a file with someone else you can specify a normal
+            link that will work until you delete a file, a time limited link | which will work for a specified time, and a one time only link
+            which, you guessed it, can only be downloaded once before
+            disappearing.
+            </p>
+          </div>
+          <div class="span6"><img src="images/file.png"></div>
+        </div>
+        <div class="row-fluid marginLeft">
+          <div class="span6"><img src="images/2factor.png"></div>
+          <div class="span6">
+            <h3>Secure Login</h3>
+            <p class="marginLeft">When one password isn't enough, we support (and encourage!)
+            2 factor authentication.
+            </p>
+            <p class="marginLeft">By using your smart phone as another means of authentication,
+            online attacks are effectively thwarted, and physical attacks
+            become significantly harder.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row-fluid">
+        <div class="span8 offset2">
+          <div class="infoSeparator"></div>
+        </div>
+      </div>
+      <div class="marginLeft">
+        <h2>Principles</h2>
+        <div class="row-fluid">
+          <div class="span6">
+            <p class="marginLeft"></p>
+            <h3><i class="icon-code marginRight"></i>Open Source</h3>
+            <p class="marginLeft">There are two basic types of security:</p>
+            <ul>
+              <li>Security through obscurity (As long as nobody notices the
+              hole in the wall, there isn't one)
+              </li>
+              <li>Security through openness (Show as many people as you can the
+              wall. If there is a hole, let's fix it right now)
+              </li>
+            </ul>
+            <p class="marginLeft">We live for open source code. We firmly believe <b>nothing can
+              be truly secure if it isn't open sourced</b>.
+            Therefore, anything that interacts with your raw data is
+            completely open source, no exceptions
+            (<a href="https://github.com/cryptic-io/web">Source</a>).
+            </p>
+            <p></p>
+          </div>
+          <div class="span6 pull-right">
+            <p class="marginLeft"></p>
+            <h3><i class="icon-eye-close marginRight"></i>No tracking. Not now. Not ever.</h3>
+            <p class="marginLeft">Privacy has become a second class citizen, and we've come to
+            accept a loss of privacy in exchange for simplicity.
+            Cryptic doesn't make that compromise, and we don't allow our
+            users to make that compromise either. Anything you do on
+            Cryptic is known to you, and to you alone. We don't collect
+            any personal data about our users, and we never will.
+            </p>
+            <p></p>
+          </div>
+        </div>
+        <div class="row-fluid">
+          <div class="span6">
+            <p class="marginLeft"></p>
+            <h3><i class="icon-lock marginRight"></i>Encryption, with rounded corners</h3>
+            <p class="marginLeft">Exisiting solutions for safely encrypting and storing data are
+            cumbersome. PGP is a wonderful tool, but it has a high barrier
+            of entry and is impractical when sharing files with
+            non-PGPers. Cryptic solves these problems by creating a
+            beautiful, simple, and easy to use interface to encrypt,
+            store, and share your files, all without having to install a
+            single piece of hardware or software.
+            </p>
+            <p></p>
+          </div>
+          <div class="span6 pull-right">
+            <p class="marginLeft"></p>
+            <h3><i class="icon-fire marginRight"></i>Damage Proof</h3>
+            <p class="marginLeft">Hard drives are delicate little things; they spin a magnetic
+            disk at insanely fast speeds. If some natural disaster doesn't
+            destroy your data, it's simply a matter of time before the
+            drive itself dies. The best solution we have so far is to make
+            it somebody else's problem, usually insecurely.
+            Cryptic stores your encrypted data reduntantly across several
+            drives and across different continents.
+            </p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="row-fluid">
+        <div class="span8 offset2">
+          <div class="infoSeparator"></div>
+        </div>
+      </div>
+      <div class="marginLeft">
+        <h2>The Team</h2>
+        <div class="row-fluid marginLeft">
+          <div class="span4"><img src="images/jolly-profile.png" class="img-rounded marginLeft"></div>
+          <div class="span4"><img src="images/marco-profile.png" class="img-rounded marginLeft"></div>
+          <div class="span4"><img src="images/brian-profile.png" class="img-rounded marginLeft"></div>
+        </div>
+        <div class="row-fluid marginLeft">
+          <div class="span4"></div>
+        </div>
+        <div class="row-fluid marginLeft">
+          <div class="span4">
+            <h3>Luke Jolly</h3>
+            <p class="marginLeft">Jolly gets his jollies by being a B.A.
+            server admin, and keeping uptime as high as humanely possible.
+            Jolly loves all things linux, and can be found skating around town.
+            </p>
+          </div>
+          <div class="span4">
+            <h3>Marco Munizaga</h3>
+            <p class="marginLeft">Responsible for the frontend architecture, and using cryptography appropriately.
+            Passionate about privacy and security.
+            He spends too much time on hacker news, and is an avid rock climber.
+            </p>
+          </div>
+          <div class="span4">
+            <h3>Brian Picciano</h3>
+            <p class="marginLeft">Equal parts coder, climber, movie lover, and sugar glider keeper, Brian loves
+            designing and writing scalable backend systems. In his spare time he enjoys wasting his
+            money playing with bitcoins.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row-fluid">
+        <div class="span8 offset2">
+          <div class="infoSeparator"></div>
+        </div>
+      </div>
+      <div class="marginLeft">
+        <div class="row-fluid">
+          <div class="span1 offset5">
+            <h2>Interested?</h2>
+          </div>
+        </div>
+        <div class="row-fluid">
+          <div class="span12 text-center">
+            <h2> <a href="http://www.kickstarter.com/projects/cryptic-io/cryptic-encrypted-online-storage"> 
+                Help fund our Kickstarter Project, and get encrypted online storage for a year!</a>
+            </h2>
+          </div>
+        </div>
+        <!--<div class="row-fluid"><div class="span12"></div></div><div class="row-fluid marginLeft"><div class="offset3 span3"><p id="provactiveContact">Let's stay in touch</p></div><div class="span3 contact"><div class="control-group"><label for="contactEmail" class="contactEmailLabel login-field-icon icon-envelope"></label><input id="contactEmail" type="text" placeholder="you@email.com" class="login-field"/></div></div></div><div class="row-fluid marginLeft"><div class="offset6"><div class="span5"><a id="subscribeEmail" href="#about" class="btn btn-primary btn-block">Keep me up to date</a></div></div></div>-->
+        <div class="row-fluid marginLeft">
+          <div class="span12"></div>
+        </div>
+        <div class="row-fluid marginLeft">
+          <div class="offset3 span3">
+            <p class="helloEmail">Come say "Hello!"</p>
+          </div>
+          <div class="span3"><a href="mailto:hello@cryptic.io" class="helloEmail">hello@cryptic.io</a></div>
         </div>
       </div>
     </div>
