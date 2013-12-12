@@ -2,6 +2,11 @@ body{
   height:7000px;
 }
 
+/* set the top bar width */
+#topBar{
+  width: 600px;
+}
+
 
 .body {
   height: 100%;
