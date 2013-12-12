@@ -5,6 +5,7 @@ body{
 
 .body {
   height: 100%;
+  min-width: 1250px;
 }
 
 /* the prelude */
