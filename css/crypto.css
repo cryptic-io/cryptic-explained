@@ -67,7 +67,7 @@ body{
   height:75px;
   width:0px;
   background-color: black;
-  background-image: url(http://cdn.scratch.mit.edu/static/site/projects/thumbnails/67/9827.png);
+  background-image: url(../images/random.png);
   position: absolute;
   z-index:2;
 }
